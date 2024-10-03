@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <Title>Your Cart | سلتك</Title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=Poppins:wght@300;400;500;600;700&display=swap"
+     rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"> 
+                    <img src="images/main_logo.png" width="300px">
+                </a>
+                
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="Account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"> 
+                <img src="images/shopping-cart.png" width="30px" height="30px">
+            </a>
+        </div>  
+        
+    </div>
+   
+
+
+<!----------account page------>
+<div class="account_page">   
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/home1.png" width="100%">
+            </div>
+
+            <div class="col-2">
+                <div class="form_container">
+                    <div class="form_btn">
+                        <span onclick="Login()">Login</span>
+                        <span onclick="Register()">SignUp</span>
+                        <hr id="indicator">
+                    </div>
+
+                    <form id="Log_form">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Login</button>
+                        <a href="">Forgot Password</a>
+                    </form>
+
+                    <form id="Reg_form">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <input type="password" placeholder="password">
+                        <button type="submit" class="btn">Register</button>
+
+
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+    
+
+<!----footer---->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-1">
+                    <img src="/images/footer_logo.png">
+                </div>
+                
+                <div class="footer-2">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Offers</li>
+                        <li>Terms and Condition</li>
+                        <li>Return Policy</li>
+                    </ul>
+                </div>
+
+                <div class="footer-3">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>FaceBook</li>
+                        <li>twitter</li>
+                        <li>instagram</li>
+                        <li>Snapchat</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+
+                <div class="footer-4">
+                    <h3>Created by</h3>
+                    <ul>
+                        <li>Mohammed Hisham</li>
+                    </ul>
+                </div>
+            </div>
+            <hr> 
+        </div>
+        
+    </div>
+
+<!---javaScript for login/register form---->
+    <script>
+        var Log_form = document.getElementById("Log_form");
+        var Reg_form = document.getElementById("Reg_form");
+        var indicator = document.getElementById("indicator");
+
+            function Register(){
+                Reg_form.style.transform = "translate(0px)"
+                Log_form.style.transform = "translate(0px)"
+                indicator.style.transform = "translate(100px)"
+            }
+
+            function Login(){
+                Reg_form.style.transform = "translate(300px)"
+                Log_form.style.transform = "translate(300px)"
+                indicator.style.transform = "translate(0px)"
+            }
+
+    </script>
+
+
+</body>
+
+</html>
